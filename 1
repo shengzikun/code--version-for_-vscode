@@ -180,7 +180,7 @@ if(a%2==0)
 //		break;
 //	case 2:
 //		printf("星期二");
-//		break;
+//		break;  //遇到break直接终止整个程序
 //	case 3:
 //		printf("星期三");
 //		break;
@@ -189,3 +189,17 @@ if(a%2==0)
 //		break;
 //	}
 //	return 0;
+==========================================================
+int main()
+{
+	int i=1;
+	while (i<=10)
+	{
+
+		if (i==5)
+			continue;   //遇到continue 用于本次循环终止，直接跳到while再次循环
+		printf("%d", i);
+		i++;
+
+	}
+	
