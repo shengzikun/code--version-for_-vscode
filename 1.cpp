@@ -237,7 +237,9 @@ if(a=2)
 //}
 int main()
 {
-	printf("hello word");
+	int a=0;
+	scanf("%d",&a);
+	printf("%d",a);
 	return 0;
 }
 	
