@@ -249,6 +249,6 @@ if(a=2)
 // }
 int main()
 {
-__ARRAY_OPERATORS
+
 }
 	
