@@ -235,16 +235,20 @@ if(a=2)
 //	}
 //	return 0;
 //}
+// int main()
+// {
+// 	int a=0;
+// 	for(a=1;a<=10;a++)
+// 	{
+// 		if(a==2)
+// 		continue;
+// 		printf("%d",a);
+// 	}
+// 	return 0;
+
+// }
 int main()
 {
-	int a=0;
-	for(a=1;a<=10;a++)
-	{
-		if(a==2)
-		continue;
-		printf("%d",a);
-	}
-	return 0;
-
+__ARRAY_OPERATORS
 }
 	
