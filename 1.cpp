@@ -224,7 +224,7 @@ if(a=2)
 //		;
 //	}
 //	printf("请确认");
-//	ae = getchar();
+//	ae = getcar();
 //	if (ae == 'Y')
 //	{
 //		printf("成功");
@@ -248,7 +248,8 @@ if(a=2)
 // }
 int main()
 {
-
+printf("hello word");
+return 0;
 }
 	
 
