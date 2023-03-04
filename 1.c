@@ -252,9 +252,8 @@ char password=0;
 // char password[20]={0};
 
 scanf("%c",&password);
+printf(“%c”,password);
 
-
-	
 
 }
 	
