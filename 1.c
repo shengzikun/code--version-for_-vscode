@@ -248,13 +248,11 @@ if(a=2)
 // }
 int main()
 {
-char password=0;
-// char password[20]={0};
+char password[20]={0};
 
-scanf("%c",&password);
-printf(“%c”,password);
-
-
+scanf("%s",&password);
+printf("%s",password);
+return 0;
 }
 	
 
