@@ -1,16 +1,27 @@
 #include <stdio.h>
-
 int main()
 {
-    int a,b;
-    for(a=1;a<10;a++)
+int password=0;
+while((password=getchar())!=EOF)
+{
+    if(password!='\n')
     {
-        for(b=1;b<=a;b++)
-        {
-            printf("%d*%d=%-3d",a,b,a*b);
-        }
-        printf("\n");
+     printf("成功\n");
+     printf("退出");
+     break;
     }
-    return 0;
+  
+    else
+    {
+     printf("失败\n");
+     continue;
+    }
+while((password=getchar())!='\n')
+        {
+            ;
+        }  
+      
 }
 
+return 0;  
+}
