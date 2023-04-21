@@ -248,10 +248,16 @@ if(a=2)
 // }
 int main()
 {
-char password[20]={0};
-
-scanf("%s",&password);
-printf("%s",password);
+int a;
+int b;
+for(a=1;a<10;a++)
+{
+	for(b=1;b<=a;b++)
+	{
+	printf("%d*%d=%-3d",a,b,a*b);
+	}
+	printf("\n");
+}
 return 0;
 }
 	
