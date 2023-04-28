@@ -246,19 +246,31 @@ if(a=2)
 // 	}
 // 	return 0;
 // }
+// int main()
+// {
+// int a;
+// int b;
+// for(a=1;a<10;a++)
+// {
+// 	for(b=1;b<=a;b++)
+// 	{
+// 	printf("%d*%d=%-3d",a,b,a*b);
+// 	}
+// 	printf("\n");
+// }
+// return 0;
+// }
 int main()
 {
-int a;
-int b;
-for(a=1;a<10;a++)
-{
-	for(b=1;b<=a;b++)
+int a=0;
+	for(a=0;a<10;a++)
 	{
-	printf("%d*%d=%-3d",a,b,a*b);
+		int b=0;
+		for(b=0;b<10;b++)
+		{
+			printf("hello\n");
+		}
 	}
-	printf("\n");
+	return 0;
 }
-return 0;
-}
-	
 
