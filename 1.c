@@ -246,6 +246,7 @@ if(a=2)
 // 	}
 // 	return 0;
 // }
+//=========================
 // int main()
 // {
 // int a;
@@ -260,17 +261,48 @@ if(a=2)
 // }
 // return 0;
 // }
-int main()
+//===========================
+// int main()
+// {
+// int a=0;
+// int b=0;
+// 	for(a=0;a<10;a++)
+// 	{
+// 		for(b=0;b<10;b++)
+// 		{
+// 			printf("hello\n");
+// 		}
+// 	}
+// 	return 0;
+// }
+//===========
+// int main()
+// {
+// 	int i=0;
+// 	do
+// 	{
+//        printf(" %d ",i);
+// 	   i++;
+// 	}
+//     while(i<=10);	   
+// 	return 0;
+// }
+//阶乘1！+2！+3！=   =================
+// int main()
+// {
+//  int a=0;
+//  int b=0;
+//  int s=1;
+//  int c=0;
+//  for(b=1;b<=3;b++)
+// {
+//      s=s*b;
+//      c=c+s;
+//  }
+// printf("%d",c);
+// return 0;
+// }
+int main ()
 {
-int a=0;
-	for(a=0;a<10;a++)
-	{
-		int b=0;
-		for(b=0;b<10;b++)
-		{
-			printf("hello\n");
-		}
-	}
-	return 0;
+	
 }
-
