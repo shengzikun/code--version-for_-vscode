@@ -303,10 +303,58 @@ if(a=2)
 // return 0;
 // }
 //===============================
+//找数字
+// int main()
+// {
+//     int arr[]={1,2,3,4,5,7,6,7,8,9};
+// 	int k=5;
+// 	int b=0;
+// 	int c=sizeof(arr)/sizeof(arr[0]);
+// 	printf("%d\n",c);
+	
+// for(b=0;b<c;b++)
+// {
+// 	if(k==arr[b])
+// 	    {
+// 			printf("找到了,为%d",arr[b]);
+// 			break;
+// 		}
+
+
+// }
+// if(b==k)
+// 	printf("找不到");
+
+// return 0;
+// }
+//找数字2============
 int main()
 {
-	while()
-	{
-	
-	}
+int k=7;
+int arr[]={1,2,3,4,5,6,7,8,9};
+int sz=sizeof(arr)/sizeof(arr[0]);
+int left=0;
+int right=sz-1;
+while(left<=right)
+{ 
+int mid=(left+right)/2;
+if(arr[mid]>k)
+{
+	right=mid-1;
 }
+else if(arr[mid]<k)
+{
+	left=mid+1;  
+}
+else
+{
+	printf("为%d",mid);
+	break;
+}
+}
+if(left>right)
+{
+	printf("找不到");
+}
+return 0;
+}	

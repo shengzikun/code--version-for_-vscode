@@ -1,26 +1,12 @@
 #include <stdio.h>
 int main()
 {
-int password=0;
-while((password=getchar())!=EOF)
-{
-    if(password='\n')
-    {
-     printf("成功\n");
-     printf("退出");
-     break;
-    } 
-    else
-    {
-     printf("失败\n");
-    
-    }
-// while((password=getchar())!='\n')
-//         {
-//             ;
-//         }  
-      
-}
+    int arr[9]={0,1,2,3,4,5,6,7,8};
+    int acc[]={0};
+    printf("%d\n",sizeof(arr));
+    printf("%d\n",sizeof(acc));
+    printf("%d\n",sizeof(arr[0]));
+    printf("%d",arr);
 
-return 0;  
+    return 0;
 }
