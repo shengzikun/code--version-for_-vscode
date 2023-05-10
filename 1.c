@@ -328,34 +328,56 @@ if(a=2)
 // return 0;
 // }
 //找数字2==============================
+// int main()
+// {
+// int k=7;
+// int arr[]={1,2,3,4,5,6,7,8,9};
+// int sz=sizeof(arr)/sizeof(arr[0]);
+// int left=0;
+// int right=sz-1;
+// while(left<=right)
+// { 
+// int mid=(left+right)/2;
+// if(arr[mid]>k)
+// {
+// 	right=mid-1;
+// }
+// else if(arr[mid]<k)
+// {
+// 	left=mid+1;  
+// }
+// else
+// {
+// 	printf("为%d",mid);
+// 	break;
+// }
+// }
+// if(left>right)
+// {
+// 	printf("找不到");
+// }
+// return 0;
+// }
+//===================
+#include<windows.h>
+#include<stdlib.h>
 int main()
 {
-int k=7;
-int arr[]={1,2,3,4,5,6,7,8,9};
-int sz=sizeof(arr)/sizeof(arr[0]);
+char arr1[]="welcome to bit!!!!!";
+char arr2[]="###################";
+
 int left=0;
-int right=sz-1;
+int right=strlen(arr1)-1;
+
 while(left<=right)
-{ 
-int mid=(left+right)/2;
-if(arr[mid]>k)
 {
-	right=mid-1;
+arr2[left]=arr1[left];
+arr2[right]=arr1[right];
+printf("%s\n",arr2);
+Sleep(1000);
+system("cls");//执行系统命令,清空对话
+left++;
+right--;
 }
-else if(arr[mid]<k)
-{
-	left=mid+1;  
-}
-else
-{
-	printf("为%d",mid);
-	break;
-}
-}
-if(left>right)
-{
-	printf("找不到");
-}
-return 0;
-}
-	
+	return 0;
+}	
