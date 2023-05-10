@@ -379,5 +379,5 @@ system("cls");//执行系统命令,清空对话
 left++;
 right--;
 }
-	return 0;
+	return 0;sd
 }	
