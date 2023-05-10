@@ -390,7 +390,7 @@ int main()
 	char password[20]={0};
 	for(i=0;i<3;i++)
 	{
-      scanf("%s",password);
+      scanf("%",password);
 	  if(strcmp(password,"123456")==0)
 	  {
 		printf("success");
