@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<stdlib.h>
 //int main(){
 //	int a=0;
 //	int b=0;
@@ -382,25 +381,30 @@ if(a=2)
 // }
 // 	return 0;
 // }
-//=============
+//密码验证=============
+// #include<stdlib.h>
+// int main()
+// {
+// 	int i=0;
+// 	char password[20]={0};
+// 	for(i=0;i<3;i++)
+// 	{
+//       scanf("%",password);
+// 	  if(strcmp(password,"123456")==0)
+// 	  {
+// 		printf("success");
+// 		break;
+// 	  }
+// 	}
+// 	if(i==3)
 
+// 		printf("fail");
+	
+// system("pause");
+// return 0;
+// }
+//==============
 int main()
 {
-	int i=0;
-	char password[20]={0};
-	for(i=0;i<3;i++)
-	{
-      scanf("%",password);
-	  if(strcmp(password,"123456")==0)
-	  {
-		printf("success");
-		break;
-	  }
-	}
-	if(i==3)
-	
-		printf("fail");
-	
-system("pause");
-return 0;
+	return 0;
 }	
