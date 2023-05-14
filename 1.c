@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 //int main(){
 //	int a=0;
 //	int b=0;
@@ -406,5 +407,7 @@ if(a=2)
 //==============
 int main()
 {
+	
+	system("pause");
 	return 0;
 }	

@@ -22,11 +22,11 @@ for i in range(6):
     yz=yz+str(a)
 
 print(yz)  
-#时间===============================
-# import datetime 
-# nowtime=datetime.datetime.now()
-# print(nowtime)
-#出生日期================
+# # 时间===============================
+import datetime 
+nowtime=datetime.datetime.now()
+print(nowtime)
+# 出生日期================
 import datetime
 nowtime=datetime.datetime(2004,2,4,15,56,0,0)
 print(nowtime.min)
