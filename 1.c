@@ -407,7 +407,7 @@ if(a=2)
 //==============
 int main()
 {
-	printf("hello");sds
+	printf("hello");
 	system("pause");
 	return 0;
 }	
