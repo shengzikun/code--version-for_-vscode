@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include<stdlib.h>
-//i%3为余数     i/3为商
 //int main(){
 //	int a=0;
 //	int b=0;
@@ -405,39 +404,10 @@ if(a=2)
 // system("pause");
 // return 0;
 // }
-//排序=================
-// int main()
-// {
-// 	int a=0;
-// 	int b=0;
-// 	int c=0;
-// 	scanf("%d%d%d",&a,&b,&c);
-// 	if(a<b)
-// 	{
-// 		int tmp =a;
-// 		a=b;
-// 		b=tmp;
-// 	}
-// 	if(a<c)
-// 	{
-// 		int tmp=a;
-// 		a=c;
-// 		c=tmp;
-// 	}
-// 	if(b<c)
-// 	{
-// 		int tmp=b;
-// 		b=c;
-// 		c=tmp;
-// 	}
-// 	printf("%d %d %d",a,b,c);
-// 	system("pause");
-// 	return 0;
-// }
-//========================
+//==============
 int main()
 {
-	
-system("pause");
-return 0;	
+	printf("hello");
+	system("pause");
+	return 0;
 }	
