@@ -37,3 +37,24 @@ print(nowtime.isoformat())
 print(nowtime.isoweekday())
 print(nowtime.strftime("%Y,%m,%d,%H:%M:%S,%A"))
 print("你出生于{0:%Y}年{0:%m}月{0:%d}日，星期{0:%A}".format(nowtime))
+//猜数字=========================
+import random
+a=random.randint(1,100)
+print(a)
+count=0
+while True:
+ 
+ b=eval(input())
+ if a>b:
+    
+    print("猜小了")
+    count=count+1
+ elif a<b:
+     print("猜大了")
+     count=count+1
+ else:
+     count=count+1
+     print("经过%d" %count)
+     break
+ //=====================
+  
