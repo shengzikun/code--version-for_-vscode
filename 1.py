@@ -56,5 +56,20 @@ while True:
      count=count+1
      print("经过%d" %count)
      break
- //=====================
-  
+ //异常处理=====================
+  try:
+    x=int(input("请输入第一个整数"))
+    y=int(input("请输入第一个整数"))
+    assert x==y,"x和y不相等"
+except ValueError as err1:
+    print(err1)
+    print("err1处理逻辑")
+except AssertionError as err2:
+    print(err2)
+    print("err2处理逻辑")
+except Exception as err3:
+    print(err3)
+    print("err3处理逻辑")     
+    
+    print("程序继续往下执行")
+#=======================
