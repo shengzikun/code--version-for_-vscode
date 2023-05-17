@@ -35,5 +35,6 @@ print(nowtime.year)
 print(nowtime.hour)
 print(nowtime.isoformat())
 print(nowtime.isoweekday())
-print(nowtime.strftime("%Y,%m,%d,%H:%M:%S,%A"))
+print(nowtime.strftime("%Y,%m,%d,%H:%i,M:%S,%A"))
 print("你出生于{0:%Y}年{0:%m}月{0:%d}日，星期{0:%A}".format(nowtime))
+        
