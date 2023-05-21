@@ -72,8 +72,8 @@ except AssertionError as err2:
     print("err2处理逻辑")
 except Exception as err3:
     print(err3)
-    print("err3处理逻辑")     
+     print("err3处理逻辑")     
     
     print("程序继续往下执行")
-#=======================
->>>
+#=======================   
+

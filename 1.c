@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
+
 //int main(){
 //	int a=0;
 //	int b=0;
@@ -404,10 +405,32 @@ if(a=2)
 // system("pause");
 // return 0;
 // }
-//==============
+//函数==============
+// int add (int a,int b)
+// {
+// 	int z=0;
+// 	z=a+b;
+// 	return z;
+// }
+// int main()
+// {
+// 	int a=1;
+// 	int b=2;
+// 	int sum=add(a,b);
+// 	printf("%d",sum);
+
+// 	system("pause");
+// 	return 0;
+// }
+//=============
+#include<string.h>
 int main()
 {
-	
+	char arr1[]="bit";//隐藏了一个\0
+	char arr2[10]="";
+	strcpy(arr2,arr1);
+	printf("%s",arr2);//复制了\0
+
 	system("pause");
 	return 0;
 }	
