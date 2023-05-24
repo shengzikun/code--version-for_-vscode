@@ -422,15 +422,19 @@ if(a=2)
 // 	system("pause");
 // 	return 0;
 // }
-//=============
+//strcopy的用法====================
 #include<string.h>
 int main()
 {
-	char arr1[]="bit";//隐藏了一个\0
-	char arr2[10]="";
-	strcpy(arr2,arr1);
-	printf("%s",arr2);//复制了\0
-
+//strcpy========================
+	// char arr1[]="bit";//隐藏了一个\0
+	// char arr2[10]="";
+	// strcpy(arr2,arr1);
+	// printf("%s",arr2);//复制了\0
+//memset===============================
+	char arr1[]="hello word";
+	memset(arr1,'*',5);
+	printf("%s",arr1);
 	system("pause");
 	return 0;
 }	
