@@ -60,20 +60,42 @@
 #      print("经过%d" %count)
 #      break
 #  //异常处理=====================
-try:
-    x=int(input("请输入第一个整数"))
-    y=int(input("请输入第一个整数"))
-    assert x==y,"x和y不相等"
-except ValueError as err1:
-    print(err1)
-    print("err1处理逻辑")
-except AssertionError as err2:
-    print(err2)
-    print("err2处理逻辑")
-except Exception as err3:
-    print(err3)
-     print("err3处理逻辑")     
+# try:
+#     x=int(input("请输入第一个整数"))
+#     y=int(input("请输入第一个整数"))
+#     assert x==y,"x和y不相等"
+# except ValueError as err1:
+#     print(err1)
+#     print("err1处理逻辑")
+# except AssertionError as err2:
+#     print(err2)
+#     print("err2处理逻辑")
+# except Exception as err3:
+#     print(err3)
+#      print("err3处理逻辑")     
     
-    print("程序继续往下执行")
-#=======================   
+#     print("程序继续往下执行")
+# #=======================   
+
+fo=open("1.txt","rt",encoding='UTF-8')
+txt=fo.read()
+
+txt=txt.lower()
+
+str1="~!#%&*()',.;"
+for ch in str1:
+    txt=txt.replace(ch,"")
+
+words=txt.split()
+counts={}
+
+for word in words:
+    counts[word]=counts.get(word,0)+1
+
+listwords=(list)(counts.items())
+listwords.sort(key=lambda x:x[1],reverse=True)
+
+for i in range(10):
+    word,count=listwords[i]
+    print("{0:<10}{1:>5}".format(word,count))
 
