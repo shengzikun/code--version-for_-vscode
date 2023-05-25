@@ -89,7 +89,7 @@ for ch in str1:#遍历str1并放在ch中
 words=txt.split()
 #创建一个 字典
 counts={}
-
+#统计相同单词的重复次数
 for word in words:
     counts[word]=counts.get(word,0)+1
 
