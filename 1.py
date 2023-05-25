@@ -79,14 +79,15 @@
 
 fo=open("1.txt","rt",encoding='UTF-8')
 txt=fo.read()
-
+#大小写转换
 txt=txt.lower()
-
+#去掉标点符号
 str1="~!#%&*()',.;"
-for ch in str1:
+for ch in str1:#遍历str1并放在ch中
     txt=txt.replace(ch,"")
-
+#把整篇分成一个个单词
 words=txt.split()
+#创建一个 字典
 counts={}
 
 for word in words:

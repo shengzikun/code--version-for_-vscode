@@ -1,6 +1,6 @@
 s = 'iloveyoumorethanicansay'
-str="i"
+str="ity"
 for ch in str:
+    print(ch)
     s=s.replace(ch,"")
-
-print(s)
+    print(s)
