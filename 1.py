@@ -96,6 +96,7 @@ for word in words:
 listwords=(list)(counts.items())
 listwords.sort(key=lambda x:x[1],reverse=True)
 
+#
 for i in range(10):
     word,count=listwords[i]
     print("{0:<10}{1:>5}".format(word,count))
