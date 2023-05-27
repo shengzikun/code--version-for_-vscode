@@ -438,25 +438,44 @@ if(a=2)
 // 	system("pause");
 // 	return 0;
 // }	
-//======================
-int get_max(int a,int b)
+//==========================
+// int get_max(int a,int b)
+// {
+// 	int z=0;
+// 	if(a>b)
+// 	{
+// 		return a;
+// 	}
+// 	else
+// 	{
+// 		return b;
+// 	}
+// }
+// int main()
+// {
+// 	int a=36;
+// 	int b=500;
+// 	int max = get_max(a, b);
+// 	printf("%d",max);
+// 	system("pause");
+// 	return 0;
+// }
+//====================
+void  swap(int*x,int*y)
 {
-	int z=0;
-	if(a>b)
-	{
-		return a;
-	}
-	else
-	{
-		return b;
-	}
+
+  int tmp;
+  tmp=*x;
+  *x=*y;
+  *y=tmp;
+  
 }
 int main()
-{
-	int a=36;
-	int b=500;
-	int max = get_max(a, b);
-	printf("%d",max);
+{     
+	int a=19;
+	int b=10; 
+	swap(&a,&b);   
+	printf("%d %d",a,b);
 	system("pause");
 	return 0;
 }
