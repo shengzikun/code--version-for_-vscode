@@ -423,18 +423,40 @@ if(a=2)
 // 	return 0;
 // }
 //strcopy的用法====================
-#include<string.h>
+// #include<string.h>
+// int main()
+// {
+// //strcpy复制========================
+// 	// char arr1[]="bit";//隐藏了一个\0
+// 	// char arr2[10]="";
+// 	// strcpy(arr2,arr1);
+// 	// printf("%s",arr2);//复制了\0
+// //memset替换===============================
+// 	// char arr1[]="hello word";
+// 	// memset(arr1,'*',5);
+// 	// printf("%s",arr1);
+// 	system("pause");
+// 	return 0;
+// }	
+//======================
+int get_max(int a,int b)
+{
+	int z=0;
+	if(a>b)
+	{
+		return a;
+	}
+	else
+	{
+		return b;
+	}
+}
 int main()
 {
-//strcpy========================
-	// char arr1[]="bit";//隐藏了一个\0
-	// char arr2[10]="";
-	// strcpy(arr2,arr1);
-	// printf("%s",arr2);//复制了\0
-//memset===============================
-	char arr1[]="hello word";
-	memset(arr1,'*',5);
-	printf("%s",arr1);
+	int a=36;
+	int b=500;
+	int max = get_max(a, b);
+	printf("%d",max);
 	system("pause");
 	return 0;
-}	
+}
