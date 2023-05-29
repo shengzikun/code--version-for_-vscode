@@ -96,8 +96,25 @@ for word in words:
 listwords=(list)(counts.items())
 listwords.sort(key=lambda x:x[1],reverse=True)
 
-#
 for i in range(10):
     word,count=listwords[i]
     print("{0:<10}{1:>5}".format(word,count))
+   #========随机生成数字===============
+import random
+f=open("1.txt","wt")
+for a in range(1000):
+    f.write("{}\n".format(random.randint(1,100)))
+  #==============复制===========
+f=open("1.txt","rt")
+s=f.read()
+d=open("2.txt","wt").write(s)
+#=============用jieba库查文字重复=======
+import jieba
+txt=open("3.txt","rt",encoding="UTF-8").read()
+words=jieba.lcut(txt)
+counts={}
+for word in words:
+    counts[word]=counts.get(word,0)+1
 
+print(counts["春"])
+print(counts["君王"])
