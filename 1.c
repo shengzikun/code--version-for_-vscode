@@ -460,22 +460,29 @@ if(a=2)
 // 	system("pause");
 // 	return 0;
 // }
-//====================
-void  swap(int*x,int*y)
-{
+//地址符====================
+// void  swap(int*x,int*y)
+// {
 
-  int tmp;
-  tmp=*x;
-  *x=*y;
-  *y=tmp;
+//   int tmp;
+//   tmp=*x;
+//   *x=*y;
+//   *y=tmp;
   
-}
+// }
+// int main()
+// {     
+// 	int a=19;
+// 	int b=10; 
+// 	swap(&a,&b);   
+// 	printf("%d %d",a,b);
+// 	system("pause");
+// 	return 0;
+// }
+//===================================
 int main()
-{     
-	int a=19;
-	int b=10; 
-	swap(&a,&b);   
-	printf("%d %d",a,b);
-	system("pause");
+{
+	
+	system("psuse");
 	return 0;
 }

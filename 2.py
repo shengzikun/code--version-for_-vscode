@@ -1,4 +1,4 @@
-so=open("2.txt","rt",en coding='UTF-8')
+so=open("2.txt","rt","en", coding='UTF-8')
 txt=so.read()
 txt=txt.lower()
 
