@@ -77,44 +77,44 @@
 #     print("程序继续往下执行")
 # #=======================   
 
-fo=open("1.txt","rt",encoding='UTF-8')
-txt=fo.read()
-#大小写转换
-txt=txt.lower()
-#去掉标点符号
-str1="~!#%&*()',.;"
-for ch in str1:#遍历str1并放在ch中
-    txt=txt.replace(ch,"")
-#把整篇分成一个个单词
-words=txt.split()
-#创建一个 字典
-counts={}
-#统计相同单词的重复次数
-for word in words:
-    counts[word]=counts.get(word,0)+1
+# fo=open("1.txt","rt",encoding='UTF-8')
+# txt=fo.read()
+# #大小写转换
+# txt=txt.lower()
+# #去掉标点符号
+# str1="~!#%&*()',.;"
+# for ch in str1:#遍历str1并放在ch中
+#     txt=txt.replace(ch,"")
+# #把整篇分成一个个单词
+# words=txt.split()
+# #创建一个 字典
+# counts={}
+# #统计相同单词的重复次数
+# for word in words:
+#     counts[word]=counts.get(word,0)+1
 
-listwords=(list)(counts.items())
-listwords.sort(key=lambda x:x[1],reverse=True)
+# listwords=(list)(counts.items())
+# listwords.sort(key=lambda x:x[1],reverse=True)
 
-for i in range(10):
-    word,count=listwords[i]
-    print("{0:<10}{1:>5}".format(word,count))
-   #========随机生成数字===============
-import random
-f=open("1.txt","wt")
-for a in range(1000):
-    f.write("{}\n".format(random.randint(1,100)))
-  #==============复制===========
-f=open("1.txt","rt")
-s=f.read()
-d=open("2.txt","wt").write(s)
-#=============用jieba库查文字重复=======
+# for i in range(10):
+#     word,count=listwords[i]
+#     print("{0:<10}{1:>5}".format(word,count))
+#========随机生成数字==========================================
+# import random
+# f=open("1.txt","wt")
+# for a in range(1000):
+#     f.write("{}\n".format(random.randint(1,100)))
+#   #==============复制===========
+# f=open("1.txt","rt")
+# s=f.read()
+# d=open("2.txt","wt").write(s)
+#=============用jieba库查文字重复=====================
 import jieba
 txt=open("3.txt","rt",encoding="UTF-8").read()
 words=jieba.lcut(txt)
 counts={}
 for word in words:
     counts[word]=counts.get(word,0)+1
-
+    
 print(counts["春"])
 print(counts["君王"])
