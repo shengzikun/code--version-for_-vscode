@@ -480,9 +480,20 @@ if(a=2)
 // 	return 0;
 // }
 //===================================
+// #include "add.h"
+
+// int main()
+// {
+// 	int a=1;
+// 	int b=4;
+// 	int s=Add(a,b); 
+//     printf("%d",s);
+// 	system("psuse");
+// 	return 0;
+// }
 int main()
 {
 	
-	system("psuse");
+	system("pause");
 	return 0;
 }
