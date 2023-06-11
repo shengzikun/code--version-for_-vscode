@@ -54,7 +54,7 @@
                //()函数调用操作符  []下标引用 例如  arr[4]
 /* int main()    //signed int=int  定义变量有符号 3可正可负
 	                   //unsigned int 定义没有符号变量 3
-{					 //typedef类型重定义
+{					 //typedef类型重定义 
   typedef unsigned int abc;
 	  unsigned int a=10;
   abc ab=10;
@@ -491,9 +491,21 @@ if(a=2)
 // 	system("psuse");
 // 	return 0;
 // }
+//==================递归======================
+void print(int n)
+{
+	if(n>9)
+	{
+		print(n/10);
+	}
+	printf("%d ",n%10);
+}
 int main()
 {
-	
+	unsigned int num=0;
+	scanf("%d", &num);
+	print(num);
+
 	system("pause");
 	return 0;
 }
