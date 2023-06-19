@@ -4,7 +4,7 @@
 #        result= j*i
 #        print("{}×{}={}".format(j,i,result),end=' ')
 #    print()
-#============
+#======================================================
 
 # from pyecharts.charts import Bar
 # bar=Bar()
@@ -28,7 +28,7 @@
 # print(nowtime)
 # # 出生日期================
 # import datetime
-# nowtime=datetime.datetime(2004,2,4,15,56,0,0)
+# nowtime=datetime.datetime(2004,2,4,15,56,0,0) er9=90
 # print(nowtime.min)
 # print(nowtime.max)
 # print(nowtime.year)
