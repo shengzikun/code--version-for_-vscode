@@ -1,5 +1,5 @@
 def fun (x,y,z):
-    if x+y>z or y+z>x or x+z>y:
+    if x+y>z and  y+z>x and x+z>y:
         print('可以')
     else:
         print('不可以')
