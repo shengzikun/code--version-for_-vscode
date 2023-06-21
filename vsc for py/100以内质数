@@ -1,7 +1,0 @@
-a=123
-j=a/10
-print(j )
-j=a//10
-print(j )
-j=a%10
-print(j )
