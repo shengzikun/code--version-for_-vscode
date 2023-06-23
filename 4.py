@@ -1,6 +1,6 @@
-a=input('输入题目')
+
 import urllib.request
-url="https://www.hive-net.cn/backend/wangke/search?token=free&question=%s" %a
+url="https://weibo.com/hot"
 
 html=urllib.request.urlopen(url)
 
