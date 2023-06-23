@@ -460,7 +460,7 @@ if(a=2)
 // 	system("pause");
 // 	return 0;
 // }
-//地址符====================
+//====================指针====================
 // void  swap(int*x,int*y)
 // {
 
@@ -492,20 +492,91 @@ if(a=2)
 // 	return 0;
 // }
 //==================递归======================
-void print(int n)
-{
-	if(n>9)
-	{
-		print(n/10);
-	}
-	printf("%d ",n%10);
-}
+// void print(int n)
+// {
+// 	if(n>9)
+// 	{
+// 		print(n/10);
+// 	}
+// 	printf("%d ",n%10);
+// }
+// int main()
+// {
+// 	unsigned int num=0;
+// 	scanf("%d", &num);
+// 	print(num); 
+// 	return 0;
+// }
+//=================================================
+// int my_strlen(char*str)
+// {	//有计数器
+// // int count=0;
+// // while(*str!='\0')
+// // {
+// // 	count++;
+// // 	str++;
+// // }
+// // return count;
+// 	//无计数器
+// 	if(*str != '\0')
+// 	{
+// 		return 1+my_strlen(str+1);
+// 	}
+// 	else
+// 	 return 0;
+// }
+// int main()
+// {
+// 	char arr[]="bit";
+// 	int len=my_strlen(arr);
+// 	printf("%d\n  ",len); 
+// 	return 0;
+// }
+//================================
+// int count=0;
+// int fac(int n)//效率不高
+// {
+// 	// if(a==3)
+// 	{
+// 		count++;
+// 	}
+//     if(a<1)
+//      return 1;
+//     else
+//      return fac(a-1)+fac(a-2);
+
+ // 	int a=1;
+// 	int b=1;
+// 	int c=1;
+// 	while(n>2)
+// 	{
+// 		c=a+b;
+// 		a=b; 
+// 		b=c;
+// 		n--;
+// 	}
+// return c;
+// }
+// int main()
+// {
+//     int n=0;
+//     int ret=0;
+//     scanf("%d",&n);
+//     ret=fac(n);
+//     printf("%d",ret);
+//     return 0;
+// }
+//==========================
 int main()
 {
-	unsigned int num=0;
-	scanf("%d", &num);
-	print(num);
+	// char arr[]={3};
+	// printf("%d\n",sizeof(arr));
+	// //计算占空间大小
+	// printf("%d\n",strlen(arr));
+	// //计算字符串长度 引用头文件
+	char arr[]={1,2,3,4,5,6,7,8,9,10};
 
-	system("pause");
+	printf("%d",sizeof(arr));
+	
 	return 0;
 }
