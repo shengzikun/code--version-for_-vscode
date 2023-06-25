@@ -1,8 +1,10 @@
-def a (x,y):
- for x in range(0,102,2):
-     y=y+x
- print(y)
+def a ():
+ s=0
+ for i in range(1,101):
+     if i%2==0:
+      s +=i
+ print(s)
 
 
-a(0,0)
+a()
         
