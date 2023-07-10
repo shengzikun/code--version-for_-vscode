@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include<stdlib.h>
 
 //int main(){
@@ -563,24 +563,29 @@ if(a=2)
 //     int ret=0;
 //     scanf("%d",&n);
 //     ret=fac(n);
-//     printf("%d",ret);
+//     printf("% d",ret);
 //     return 0;
 // }
-//==========================
+// //==========================
+// int main()
+// {
+// 	// char arr[]={3};
+// 	// printf("%d\n",sizeof(arr));
+// 	// //计算占空间大小 
+// 	// printf("%d\n",strlen(arr));
+// 	// //计算字符串长度 引用头文件
+
+// 	//一维
+// 	//char arr[]={1,2,3,4,5,6,7,8,9,10};
+// 	//二维
+// 	char ch[2][4]={{1,2,3},{4,5}};
+// 	printf("%d",ch[1][1]);
+	
+// 	return 0;
+// } 
+//========================
 int main()
 {
-	// char arr[]={3};
-	// printf("%d\n",sizeof(arr));
-	// //计算占空间大小
-	// printf("%d\n",strlen(arr));
-	// //计算字符串长度 引用头文件
-
-	//一维
-	//char arr[]={1,2,3,4,5,6,7,8,9,10};
-	//二维
-	char ch[2][4]={{1,2,3},{4,5}};
-	printf("%d",ch[1][1]);
 	
 	return 0;
 }
- 
