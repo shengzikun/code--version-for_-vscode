@@ -5,6 +5,7 @@
 // int a=123;
 // printf("%d\n",a/10);
 // printf("%d\n",a%10);
+
 // system("pause");
 // return 0;
 // }

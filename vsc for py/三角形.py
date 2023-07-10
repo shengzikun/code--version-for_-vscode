@@ -9,3 +9,4 @@ x=input("请输入第一个数")
 y=input("请输入第二个数")
 z=input("请输入第三个数")
 fun(x,y,z)
+ 
